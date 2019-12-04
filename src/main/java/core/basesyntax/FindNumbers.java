@@ -15,10 +15,10 @@ public class FindNumbers {
     public int[] getAllNumbers(String text) {
         String[] numbArray = text.replaceAll("[^- 0-9]", " ")
             .replaceAll("\\s+", " ").trim().split(" ");
-        int[] numbs = new int[numbArray.length];
+        int[] numbers = new int[numbArray.length];
         for (int i = 0; i < numbArray.length; i++) {
-            numbs[i] = Integer.parseInt(numbArray[i]) * 2;
+            numbers[i] = Integer.parseInt(numbArray[i]) * 2;
         }
-        return numbs;
+        return numbers;
     }
 }
